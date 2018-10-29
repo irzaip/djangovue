@@ -19,7 +19,7 @@ export default class AuthService {
   auth0 = new auth0.WebAuth({
     domain: 'kakata.auth0.com',
     clientID: 'sR8gdayVdAZUaZFeRt8oIHY3EW6Bvi0Z',
-    redirectUri: 'http://139.194.89.203:8000/api/private/?',
+    redirectUri: 'http://18.188.119.235:8080',
     audience: 'https://kakata.auth0.com/api/v2/',
     responseType: 'token id_token',
     scope: 'openid profile'

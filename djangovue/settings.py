@@ -30,7 +30,7 @@ SECRET_KEY = '_@kj*8-gr8bwh@8rk_f10ew987o813aygzsjf^zjjm66@e=x%g'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [ '139.194.89.203' ]
+ALLOWED_HOSTS = [ '18.188.119.235' ]
 
 
 # Application definition
@@ -82,7 +82,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'djangovue.wsgi.application'
 
 CORS_ORIGIN_WHITELIST = (
-    'localhost:8080', '139.194.89.203:8080',
+    'localhost:8080', '18.188.119.235:8080',
 )
 
 

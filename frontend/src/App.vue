@@ -6,7 +6,7 @@
       @click="login()">
       Log In
     </button>
-
+<a href="http://18.188.119.235:8000/api/private">test</a>
     <button
       class="btn btn-primary btn-margin"
       v-if="authenticated"
@@ -29,7 +29,7 @@
 import AuthService from './auth/AuthService'
 import axios from 'axios'
 
-const API_URL = 'http://139.194.89.203:8000'
+const API_URL = 'http://18.188.119.235:8000'
 
 const auth = new AuthService()
 
