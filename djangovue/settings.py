@@ -141,14 +141,14 @@ REST_FRAMEWORK = {
     ),
     'DEFAULT_AUTHENTICATION_CLASSES': (
        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
-        'rest_framework.authentication.TokenAuthentication',
-        'rest_framework.authentication.SessionAuthentication',
+       #'rest_framework.authentication.TokenAuthentication',
+       #'rest_framework.authentication.SessionAuthentication',
     ),
 }
 
 
 AUTH0_DOMAIN = 'kakata.auth0.com'
-API_IDENTIFIER = '5bd67dc2eb81733566a621a5'
+API_IDENTIFIER = 'https://kakata.auth0.com/api/v2/'
 PUBLIC_KEY = None
 JWT_ISSUER = None
 

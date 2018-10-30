@@ -29,7 +29,7 @@
 import AuthService from './auth/AuthService'
 import axios from 'axios'
 
-const API_URL = 'http://18.188.119.235:8000'
+// const API_URL = 'http://18.188.119.235:8000'
 
 const auth = new AuthService()
 
@@ -45,7 +45,7 @@ export default {
 
     return {
       authenticated: false,
-      message: ''
+      message: 'belon masuk'
     }
   },
   methods: {
@@ -60,7 +60,7 @@ export default {
       auth.logout()
     },
     privateMessage () {
-      const url = `${API_URL}/api/private/`
+      const url = 'http://18.188.119.235:8000/api/private/'
       return axios.get(url, {headers: {Authorization: `Bearer ${AuthService.getAuthToken()}`}}).then((response) => {
         console.log(response.data)
         this.message = response.data || ''
